@@ -9,6 +9,7 @@ class Account:
         self.balance = balance
         self.loan_intrest_rate = 0.05
         self.loans = loans
+        self.transfers = transfers
        
 
     def deposits(self,amount):
@@ -71,9 +72,9 @@ def get_loan(self, amount):
                  
 
     def get_statement(self):
-        statement = f"Account statement for {self.name} Deposits: {self.deposits}Withdrawals: {self.withdrawals}Transfers: {self.transfers}\n Balance: {self.get_balance()}"
+        statement = f"Account statement for {self.name} Deposit: {self.depositt}withdrawals: {self.withdrawals}transfers: {self.transfers} Balance: {self.get_balance()}"
         return statement
 
     def get_loan_statement(self):
-        statement = f"Loan statement for {self.name} Loans taken: {self.loans}\n Loan repayments: {self.loan_repaying}Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}"
+        statement = f"Loan statement for {self.name} Loans taken: {self.loans} Loan repayments: {self.loan_repaying}Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}"
         return statement
