@@ -78,3 +78,10 @@ def get_loan(self, amount):
     def get_loan_statement(self):
         statement = f"Loan statement for {self.name} Loans taken: {self.loans} Loan repayments: {self.loan_repaying}Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}"
         return statement
+
+def freeze_account(self):
+        self.freeze=true
+        return "Account frozen"
+    def unfreeze_account(self):
+        self.freeze=false
+        return "Account unfrozen"
