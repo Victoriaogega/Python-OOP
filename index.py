@@ -88,3 +88,8 @@ def unfreeze_account(self):
         return "Account unfrozen"
 def view_account_details(self):
     return (f"{self.name}", your account balance is {self.balance()})        
+
+
+def change_owner(self,new_owner):
+        self.new_owner=new_owner
+        return f"New account holder is {new_owner}"
