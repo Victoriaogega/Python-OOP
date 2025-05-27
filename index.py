@@ -71,9 +71,9 @@ def get_loan(self, amount):
                  
 
     def get_statement(self):
-        statement = f"Account statement for {self.name}\n Deposits: {self.deposits}\n Withdrawals: {self.withdrawals}\n Transfers: {self.transfers}\n Balance: {self.get_balance()}\n"
+        statement = f"Account statement for {self.name} Deposits: {self.deposits}Withdrawals: {self.withdrawals}Transfers: {self.transfers}\n Balance: {self.get_balance()}"
         return statement
 
     def get_loan_statement(self):
-        statement = f"Loan statement for {self.name}\n Loans taken: {self.loans}\n Loan repayments: {self.loan_repaying}\n Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}\n"
+        statement = f"Loan statement for {self.name} Loans taken: {self.loans}\n Loan repayments: {self.loan_repaying}Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}"
         return statement
