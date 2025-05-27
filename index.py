@@ -82,6 +82,9 @@ def get_loan(self, amount):
 def freeze_account(self):
         self.freeze=true
         return "Account frozen"
-    def unfreeze_account(self):
+
+def unfreeze_account(self):
         self.freeze=false
         return "Account unfrozen"
+def view_account_details(self):
+    return (f"{self.name}", your account balance is {self.balance()})        
