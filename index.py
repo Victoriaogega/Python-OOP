@@ -41,7 +41,7 @@ class Account:
             self.balance -= amount
             return f"You have successfully withdrawed {amount} shillings from your account and your balance is {self.balance} KSH."
                 
-def get_loan(self, amount):
+     def get_loan(self, amount):
         if amount > 0:
             pass
         else:
@@ -53,7 +53,7 @@ def get_loan(self, amount):
 
                   
 
-    def repay_loan(self, amount):
+     def repay_loan(self, amount):
         if amount <=0:
             return "Loan repayment failed, amount has to be positive."
         total_outstanding_debt = sum(loans["amount"]-loans["repaid_amount"]for loans in self.loans if not loan.get ("Fully re-paid", false))
@@ -71,25 +71,26 @@ def get_loan(self, amount):
 
                  
 
-    def get_statement(self):
+     def get_statement(self):
         statement = f"Account statement for {self.name} Deposit: {self.depositt}withdrawals: {self.withdrawals}transfers: {self.transfers} Balance: {self.get_balance()}"
         return statement
 
-    def get_loan_statement(self):
+     def get_loan_statement(self):
         statement = f"Loan statement for {self.name} Loans taken: {self.loans} Loan repayments: {self.loan_repaying}Unpaid loan: {sum(self.loans) - sum(self.loan_repaying)}"
         return statement
 
-def freeze_account(self):
+     def freeze_account(self):
         self.freeze=true
         return "Account frozen"
 
-def unfreeze_account(self):
+      def unfreeze_account(self):
         self.freeze=false
         return "Account unfrozen"
-def view_account_details(self):
-    return (f"{self.name}", your account balance is {self.balance()})        
+
+     def view_account_details(self):
+         return (f"{self.name}", your account balance is {self.balance()})        
 
 
-def change_owner(self,new_owner):
+     def change_owner(self,new_owner):
         self.new_owner=new_owner
         return f"New account holder is {new_owner}"
