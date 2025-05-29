@@ -50,6 +50,7 @@ class Account:
             return "Please try a smaller amount."  
         else:
             self.loans.append(amount)
+            self.balance += amount
 
                   
 
